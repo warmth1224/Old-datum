@@ -1592,9 +1592,16 @@ align-items: stretch;}
 }
 
 .work-box {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.work-box:not(:last-child) {
+  margin-block-end: var(--gutter-huge);
+}
+ 
+.work-item {
+  display: flex;
+  justify-content: space-between;
 
+}
